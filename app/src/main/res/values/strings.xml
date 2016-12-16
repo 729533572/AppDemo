@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">APPdemo</string>
+
+
+    <string name="tabbar_home">首页</string>
+    <string name="tabbar_vedio">视频</string>
+    <string name="tabbar_interest">收藏</string>
+    <string name="tabbar_user">我的</string>
+
+
+
+
+</resources>
