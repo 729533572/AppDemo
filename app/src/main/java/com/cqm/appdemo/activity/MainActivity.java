@@ -178,6 +178,5 @@ public class MainActivity extends AppCompatActivity {
                 tabText4.setTextColor(getResources().getColor(R.color.tabPressed));
                 break;
         }
-
     }
 }
