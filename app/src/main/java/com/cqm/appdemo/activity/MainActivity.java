@@ -27,7 +27,7 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    final static String TAG = "MainActivity";
     @BindView(R.id.tab_img1)
     ImageView tabImg1;
     @BindView(R.id.tab_text1)
