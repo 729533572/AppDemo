@@ -9,24 +9,30 @@
     <ImageView
         android:id="@+id/left_btn"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="28dp"
         android:layout_centerVertical="true"
         android:layout_marginLeft="16dp"
-        android:src="@mipmap/menu" />
+        android:src="@mipmap/back"
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/centet_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:lines="1"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:ellipsize="end"
+        android:paddingRight="50dp"
         android:text="@string/app_name"
         android:textColor="@color/colorWhite"
         android:textSize="18sp" />
 
     <ImageView
         android:id="@+id/right_btn"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="16dp"

@@ -20,14 +20,14 @@
 
             <ImageView
                 android:id="@+id/tab_img1"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:layout_gravity="center"
                 android:background="@drawable/bottom_tab1_selector" />
 
             <TextView
                 android:id="@+id/tab_text1"
-                android:textSize="15sp"
+                android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -52,8 +52,8 @@
 
             <ImageView
                 android:id="@+id/tab_img2"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:layout_gravity="center"
                 android:background="@drawable/bottom_tab2_selector"/>
 
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/tabbar_vedio"
-                android:textSize="15sp"
+                android:textSize="12sp"
                 android:textColor="@color/tabNormal" />
         </LinearLayout>
 
@@ -84,14 +84,14 @@
 
             <ImageView
                 android:id="@+id/tab_img3"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:layout_gravity="center"
                 android:background="@drawable/bottom_tab3_selector" />
 
             <TextView
                 android:id="@+id/tab_text3"
-                android:textSize="15sp"
+                android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -116,14 +116,14 @@
 
             <ImageView
                 android:id="@+id/tab_img4"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:layout_gravity="center"
                 android:background="@drawable/bottom_tab4_selector" />
 
             <TextView
                 android:id="@+id/tab_text4"
-                android:textSize="15sp"
+                android:textSize="12sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

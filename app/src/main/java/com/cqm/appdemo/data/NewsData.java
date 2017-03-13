@@ -1,4 +1,6 @@
-package com.cqm.appdemo.bean;
+package com.cqm.appdemo.data;
+
+import com.cqm.appdemo.bean.NewsBean;
 
 import java.util.List;
 

@@ -1,7 +1,10 @@
 package com.cqm.appdemo.http;
 
 
+import com.cqm.appdemo.bean.ConsBean;
+import com.cqm.appdemo.bean.JokeResult;
 import com.cqm.appdemo.bean.NewsResult;
+import com.cqm.appdemo.bean.GankResult;
 
 import java.util.Map;
 
@@ -30,9 +33,17 @@ public interface ApiService {
     @GET("toutiao/index")
     Call<NewsResult> getNewsData(@Query("key") String key, @Query("type") String type);
 
-    @GET("toutiao/index")
-    Call<NewsResult> getNewsData(@QueryMap Map<String, String> options);
+    @GET
+    Call<ConsBean> getConsData(@Url String url, @QueryMap Map<String, String> options);
 
+    @GET
+    Call<GankResult> getGankData(@Url String url);
+
+    @GET
+    Call<JokeResult> getJokeData(@Url String url, @QueryMap Map<String, String> options);
+
+    @GET
+    Call<String> getWeatherData(@Url String url, @Query("key") String key, @Query("cityname") String cityname);
 
     //文件上传
     @Multipart

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FF0000</color>
-    <color name="colorPrimaryDark">#FF0000</color>
+    <color name="colorPrimary">#FA010D</color>
+    <color name="colorPrimaryDark">#ED1C24</color>
     <color name="colorAccent">#FF4081</color>
 
 
@@ -10,6 +10,8 @@
     <color name="colorBlack">#000000</color>
 
 
-    <color name="tabPressed">#FF0000</color>
-    <color name="tabNormal">#A3A3A3</color>
+    <color name="tabPressed">#ED1C24</color>
+    <color name="tabNormal">#707070</color>
+    <color name="breakLine">#E0E0E0</color>
+    <color name="colorText">#333333</color>
 </resources>

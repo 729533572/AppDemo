@@ -1,9 +1,9 @@
 package com.cqm.appdemo.activity;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
@@ -12,11 +12,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.cqm.appdemo.R;
-import com.cqm.appdemo.base.BaseFragment;
 import com.cqm.appdemo.fragment.HomeFragment;
-import com.cqm.appdemo.fragment.InterestFragment;
+import com.cqm.appdemo.fragment.BeautyFragment;
 import com.cqm.appdemo.fragment.UserFragment;
-import com.cqm.appdemo.fragment.VedioFragment;
+import com.cqm.appdemo.fragment.ArticleFragment;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -68,28 +67,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private Fragment instantFragment(){
-        BaseFragment baseFragment = null;
+        Fragment mFragment = null;
         switch (fragmentTag){
             case 0:
-                baseFragment =  new HomeFragment();
+                mFragment =  new HomeFragment();
                 break;
             case 1:
-                baseFragment =  new VedioFragment();
+                mFragment =  new ArticleFragment();
                 break;
             case 2:
-                baseFragment =  new InterestFragment();
+                mFragment =  new BeautyFragment();
                 break;
             case 3:
-                baseFragment =  new UserFragment();
+                mFragment =  new UserFragment();
                 break;
             default:
                 break;
         }
-        return baseFragment;
+        return mFragment;
     }
 
     private void showFragment(){
-        FragmentManager fragmentManager = getFragmentManager();
+        FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         String fragmenTagName = fragmentNames.get(fragmentTag);
         Fragment fragment = fragmentManager.findFragmentByTag(fragmenTagName);

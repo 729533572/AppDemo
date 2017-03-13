@@ -1,5 +1,7 @@
 package com.cqm.appdemo.bean;
 
+import com.cqm.appdemo.data.NewsData;
+
 /**
  * Created by chenqm on 2016/12/12.
  */
