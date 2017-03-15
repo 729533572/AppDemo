@@ -57,16 +57,17 @@ public class UserFragment extends BaseFragment {
     @OnClick({R.id.weather_view, R.id.movie_view, R.id.xingzuo_view, R.id.smile_view})
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.weather_view:{
+            case R.id.weather_view: {
                 Intent intent = new Intent(mContext, WeatherActivity.class);
                 mContext.startActivity(intent);
             }
-                break;
+            break;
             case R.id.movie_view: {
                 Intent intent = new Intent(mContext, WebViewActivity.class);
                 intent.putExtra("webUrl", "https://m.douban.com/movie/");
                 intent.putExtra("webTitle", "热播电影");
                 intent.putExtra("desc", "豆瓣电影");
+                intent.putExtra("imgurl", "http://easyread.ph.126.net/vRGp3mCFtErHMYxmmQXiUQ==/7916688229151032266.png");
                 mContext.startActivity(intent);
             }
             break;
