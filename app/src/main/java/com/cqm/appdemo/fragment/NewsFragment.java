@@ -80,6 +80,8 @@ public class NewsFragment extends Fragment implements SwipeRefreshLayout.OnRefre
                 intent.putExtra("webUrl", bean.getUrl());
                 intent.putExtra("webTitle", bean.getAuthor_name());
                 intent.putExtra("desc", bean.getTitle());
+                intent.putExtra("imgurl",bean.getThumbnail_pic_s());
+
                 mContext.startActivity(intent);
             }
         });
