@@ -42,7 +42,7 @@ public class WebViewActivity extends BaseActivity {
         desc = getIntent().getStringExtra("desc");
         imgurl = getIntent().getStringExtra("imgurl");
         if (TextUtils.isEmpty(imgurl)) {
-            imgurl = "https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1489386929&di=4b943bcb020010ea051d266916531dfd&src=http://img3.gao7.com/files/appleimage/31A/31A79516-D0EC-47CA-BB8F-0E51C3A0A0AF.jpg";
+            imgurl = "https://github.com/chenqunming/AppDemo/blob/master/app/src/main/res/mipmap-xxhdpi/logo.jpg";
         }
         setCentetTitle(webTitle);
         webView.loadUrl(webUrl);
