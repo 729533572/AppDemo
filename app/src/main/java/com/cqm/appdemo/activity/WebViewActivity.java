@@ -1,6 +1,7 @@
 package com.cqm.appdemo.activity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.webkit.WebView;
 
@@ -25,6 +26,8 @@ public class WebViewActivity extends BaseActivity {
     private String webUrl = "";
     private String webTitle = "";
     private String desc = "";
+    private String imgurl = "";
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,10 @@ public class WebViewActivity extends BaseActivity {
         webUrl = getIntent().getStringExtra("webUrl");
         webTitle = getIntent().getStringExtra("webTitle");
         desc = getIntent().getStringExtra("desc");
+        imgurl = getIntent().getStringExtra("imgurl");
+        if (TextUtils.isEmpty(imgurl)) {
+            imgurl = "https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1489386929&di=4b943bcb020010ea051d266916531dfd&src=http://img3.gao7.com/files/appleimage/31A/31A79516-D0EC-47CA-BB8F-0E51C3A0A0AF.jpg";
+        }
         setCentetTitle(webTitle);
         webView.loadUrl(webUrl);
 
@@ -56,10 +63,10 @@ public class WebViewActivity extends BaseActivity {
         oks.setTitle(webTitle);
         oks.setTitleUrl(webUrl);
         oks.setText(desc);
-//        oks.setImageUrl("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489123925794&di=05ee2720e5333b3e9006e2a4412e0269&imgtype=0&src=http%3A%2F%2Fimg01.taopic.com%2F160117%2F318752-16011F9334648.jpg");
+        oks.setImageUrl(imgurl);
 //        oks.setImagePath("/sdcard/test.jpg");//确保SDcard下面存在此张图片
         oks.setUrl(webUrl);
-        oks.setComment("我是测试评论文本");
+//        oks.setComment("我是测试评论文本");
         oks.show(this);
     }
 
