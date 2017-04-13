@@ -6,17 +6,12 @@ app开发框架，一个新闻阅读App框架，Material Design + Retrofit + Gli
 - 美女：妹纸（代码家的gank.io API福利）
 - 我的：一些小功能
 
-# 首页截图
-![首页](https://github.com/chenqunming/AppDemo/blob/master/picture/1.png)
+# 首页截图 和 资讯截图
+![首页](https://github.com/chenqunming/AppDemo/blob/master/picture/1.png)     ![资讯](https://github.com/chenqunming/AppDemo/blob/master/picture/2.png)
 
-# 资讯截图
-![资讯](https://github.com/chenqunming/AppDemo/blob/master/picture/2.png)
 
-# 美眉截图
-![美女](https://github.com/chenqunming/AppDemo/blob/master/picture/3.png)
-
-# 我的截图
-![我的](https://github.com/chenqunming/AppDemo/blob/master/picture/4.png)
+# 美眉截图 和 我的截图
+![美女](https://github.com/chenqunming/AppDemo/blob/master/picture/3.png)    ![我的](https://github.com/chenqunming/AppDemo/blob/master/picture/4.png)
 
 
 # 用到的开源库有：
