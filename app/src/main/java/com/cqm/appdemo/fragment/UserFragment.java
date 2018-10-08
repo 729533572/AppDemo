@@ -54,7 +54,7 @@ public class UserFragment extends BaseFragment {
         super.onDestroy();
     }
 
-    @OnClick({R.id.weather_view, R.id.movie_view, R.id.xingzuo_view, R.id.smile_view})
+    @OnClick({R.id.weather_view, R.id.xingzuo_view, R.id.smile_view})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.weather_view: {
@@ -62,15 +62,15 @@ public class UserFragment extends BaseFragment {
                 mContext.startActivity(intent);
             }
             break;
-            case R.id.movie_view: {
-                Intent intent = new Intent(mContext, WebViewActivity.class);
-                intent.putExtra("webUrl", "https://m.douban.com/movie/");
-                intent.putExtra("webTitle", "热播电影");
-                intent.putExtra("desc", "豆瓣电影");
-                intent.putExtra("imgurl", "http://easyread.ph.126.net/vRGp3mCFtErHMYxmmQXiUQ==/7916688229151032266.png");
-                mContext.startActivity(intent);
-            }
-            break;
+//            case R.id.movie_view: {
+//                Intent intent = new Intent(mContext, WebViewActivity.class);
+//                intent.putExtra("webUrl", "https://m.douban.com/movie/");
+//                intent.putExtra("webTitle", "热播电影");
+//                intent.putExtra("desc", "豆瓣电影");
+//                intent.putExtra("imgurl", "http://easyread.ph.126.net/vRGp3mCFtErHMYxmmQXiUQ==/7916688229151032266.png");
+//                mContext.startActivity(intent);
+//            }
+//            break;
             case R.id.xingzuo_view: {
                 Intent intent = new Intent(mContext, XingZuoActivity.class);
                 mContext.startActivity(intent);

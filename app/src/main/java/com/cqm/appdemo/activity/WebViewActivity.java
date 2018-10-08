@@ -47,12 +47,12 @@ public class WebViewActivity extends BaseActivity {
         setCentetTitle(webTitle);
         webView.loadUrl(webUrl);
 
-        setRightBtn(R.mipmap.share, new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showShare();
-            }
-        });
+//        setRightBtn(R.mipmap.share, new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                showShare();
+//            }
+//        });
     }
 
 
